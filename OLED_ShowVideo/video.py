@@ -85,20 +85,9 @@ def video_to_serial(input_path, serial_port, baudrate=115200,
 
 if __name__ == "__main__":
     # 配置参数
-    input_video = "video\luckyStar.mp4" #自适应阈值，可原帧率
-    origin_fps = 30
-    input_video1 = "video\\aot_op_1.mp4" #自适应阈值，实测原帧率0.5MHz可达视频原长，波特率越大处理越快时长越短
-    origin_fps1 = 25
-    input_video2 = "video\\aot_end_1.mp4" #自适应阈值，可原帧率
-    origin_fps2 = 24
-    input_video3 = "video\\badApple.mp4" #最简单的二值化即可，实测帧率15最佳
-    origin_fps3 = 60
-    input_video4 = ".\\video\\aot_end_4.mp4"
-    origin_fps4 = 0
-    input_video5 = ".\\video\\aot_manga.mp4"
-    origin_fps5 = 0
-    serial_port = "COM3"  # 根据实际情况修改
-    input_video_net = "https://upos-sz-mirror08c.bilivideo.com/upgcxcode/69/12/48361269/48361269_da3-1-100024.m4s?e=ig8euxZM2rNcNbdlhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&platform=pc&trid=65da6914fdfb4389966e3de102bdcc4u&deadline=1746380615&gen=playurlv3&os=08cbv&og=hw&uipk=5&nbs=1&mid=3546719776147818&tag=&oi=620283507&upsig=7c3bc48d6ac9377f63381ec19dba01c4&uparams=e,platform,trid,deadline,gen,os,og,uipk,nbs,mid,tag,oi&bvc=vod&nettype=0&bw=909878&dl=0&f=u_0_0&agrr=0&buvid=49D0C9F3-69E6-AA02-5515-864F083B253072865infoc&build=0&orderid=0,3"
+    input_video = "video\\aot_op_1.mp4" #自适应阈值，可原帧率
+    origin_fps = 25
+    serial_port = "COM5"  # 根据实际情况修改
     baudrate = 500000
     
-    video_to_serial(input_video1, serial_port, baudrate, target_fps=origin_fps1)
+    video_to_serial(input_video, serial_port, baudrate, target_fps=origin_fps)
